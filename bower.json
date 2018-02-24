@@ -4,5 +4,8 @@
     "version": "1.0.0",
     "homepage": "https://github.com/maxotek/mx-angular-api-service",
     "license": "MIT",
-    "private": true
+    "private": true,
+    "dependencies": {
+        "angular": "v1.6.8"
+    }
 }
