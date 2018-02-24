@@ -5,6 +5,12 @@ var path = require('path'),
     config = require('./build.conf.js'),
     plugins = require('gulp-load-plugins')();
 
+gulp.task('clean', function () {
+    return gulp
+        .src(config.buildFolder, { read: false })
+        .pipe(plugins.clean());
+});
+
 gulp.task('scripts', function () {
     return gulp.src(config.srcJs)
 
